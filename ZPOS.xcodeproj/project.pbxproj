@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E3BF141EAD2DB500A604A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3BF131EAD2DB500A604A2 /* AppDelegate.swift */; };
+		00E3BF161EAD2DB500A604A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3BF151EAD2DB500A604A2 /* ViewController.swift */; };
+		00E3BF191EAD2DB500A604A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E3BF171EAD2DB500A604A2 /* Main.storyboard */; };
+		00E3BF1B1EAD2DB500A604A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E3BF1A1EAD2DB500A604A2 /* Assets.xcassets */; };
+		00E3BF1E1EAD2DB500A604A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E3BF1C1EAD2DB500A604A2 /* LaunchScreen.storyboard */; };
+		00E3BF291EAD2DB500A604A2 /* ZPOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3BF281EAD2DB500A604A2 /* ZPOSTests.swift */; };
+		00E3BF341EAD2DB500A604A2 /* ZPOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3BF331EAD2DB500A604A2 /* ZPOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E3BF251EAD2DB500A604A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00E3BF081EAD2DB400A604A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E3BF0F1EAD2DB500A604A2;
+			remoteInfo = ZPOS;
+		};
+		00E3BF301EAD2DB500A604A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00E3BF081EAD2DB400A604A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E3BF0F1EAD2DB500A604A2;
+			remoteInfo = ZPOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E3BF101EAD2DB500A604A2 /* ZPOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E3BF131EAD2DB500A604A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00E3BF151EAD2DB500A604A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00E3BF181EAD2DB500A604A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00E3BF1A1EAD2DB500A604A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00E3BF1D1EAD2DB500A604A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00E3BF1F1EAD2DB500A604A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E3BF241EAD2DB500A604A2 /* ZPOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZPOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E3BF281EAD2DB500A604A2 /* ZPOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPOSTests.swift; sourceTree = "<group>"; };
+		00E3BF2A1EAD2DB500A604A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E3BF2F1EAD2DB500A604A2 /* ZPOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZPOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E3BF331EAD2DB500A604A2 /* ZPOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPOSUITests.swift; sourceTree = "<group>"; };
+		00E3BF351EAD2DB500A604A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E3BF0D1EAD2DB500A604A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E3BF211EAD2DB500A604A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E3BF2C1EAD2DB500A604A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E3BF071EAD2DB400A604A2 = {
+			isa = PBXGroup;
+			children = (
+				00E3BF121EAD2DB500A604A2 /* ZPOS */,
+				00E3BF271EAD2DB500A604A2 /* ZPOSTests */,
+				00E3BF321EAD2DB500A604A2 /* ZPOSUITests */,
+				00E3BF111EAD2DB500A604A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00E3BF111EAD2DB500A604A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00E3BF101EAD2DB500A604A2 /* ZPOS.app */,
+				00E3BF241EAD2DB500A604A2 /* ZPOSTests.xctest */,
+				00E3BF2F1EAD2DB500A604A2 /* ZPOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00E3BF121EAD2DB500A604A2 /* ZPOS */ = {
+			isa = PBXGroup;
+			children = (
+				00E3BF131EAD2DB500A604A2 /* AppDelegate.swift */,
+				00E3BF151EAD2DB500A604A2 /* ViewController.swift */,
+				00E3BF171EAD2DB500A604A2 /* Main.storyboard */,
+				00E3BF1A1EAD2DB500A604A2 /* Assets.xcassets */,
+				00E3BF1C1EAD2DB500A604A2 /* LaunchScreen.storyboard */,
+				00E3BF1F1EAD2DB500A604A2 /* Info.plist */,
+			);
+			path = ZPOS;
+			sourceTree = "<group>";
+		};
+		00E3BF271EAD2DB500A604A2 /* ZPOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E3BF281EAD2DB500A604A2 /* ZPOSTests.swift */,
+				00E3BF2A1EAD2DB500A604A2 /* Info.plist */,
+			);
+			path = ZPOSTests;
+			sourceTree = "<group>";
+		};
+		00E3BF321EAD2DB500A604A2 /* ZPOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00E3BF331EAD2DB500A604A2 /* ZPOSUITests.swift */,
+				00E3BF351EAD2DB500A604A2 /* Info.plist */,
+			);
+			path = ZPOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E3BF0F1EAD2DB500A604A2 /* ZPOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E3BF381EAD2DB500A604A2 /* Build configuration list for PBXNativeTarget "ZPOS" */;
+			buildPhases = (
+				00E3BF0C1EAD2DB500A604A2 /* Sources */,
+				00E3BF0D1EAD2DB500A604A2 /* Frameworks */,
+				00E3BF0E1EAD2DB500A604A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZPOS;
+			productName = ZPOS;
+			productReference = 00E3BF101EAD2DB500A604A2 /* ZPOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00E3BF231EAD2DB500A604A2 /* ZPOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E3BF3B1EAD2DB500A604A2 /* Build configuration list for PBXNativeTarget "ZPOSTests" */;
+			buildPhases = (
+				00E3BF201EAD2DB500A604A2 /* Sources */,
+				00E3BF211EAD2DB500A604A2 /* Frameworks */,
+				00E3BF221EAD2DB500A604A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E3BF261EAD2DB500A604A2 /* PBXTargetDependency */,
+			);
+			name = ZPOSTests;
+			productName = ZPOSTests;
+			productReference = 00E3BF241EAD2DB500A604A2 /* ZPOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00E3BF2E1EAD2DB500A604A2 /* ZPOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E3BF3E1EAD2DB500A604A2 /* Build configuration list for PBXNativeTarget "ZPOSUITests" */;
+			buildPhases = (
+				00E3BF2B1EAD2DB500A604A2 /* Sources */,
+				00E3BF2C1EAD2DB500A604A2 /* Frameworks */,
+				00E3BF2D1EAD2DB500A604A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E3BF311EAD2DB500A604A2 /* PBXTargetDependency */,
+			);
+			name = ZPOSUITests;
+			productName = ZPOSUITests;
+			productReference = 00E3BF2F1EAD2DB500A604A2 /* ZPOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00E3BF081EAD2DB400A604A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = zenkiu;
+				TargetAttributes = {
+					00E3BF0F1EAD2DB500A604A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					00E3BF231EAD2DB500A604A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 00E3BF0F1EAD2DB500A604A2;
+					};
+					00E3BF2E1EAD2DB500A604A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 00E3BF0F1EAD2DB500A604A2;
+					};
+				};
+			};
+			buildConfigurationList = 00E3BF0B1EAD2DB400A604A2 /* Build configuration list for PBXProject "ZPOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00E3BF071EAD2DB400A604A2;
+			productRefGroup = 00E3BF111EAD2DB500A604A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00E3BF0F1EAD2DB500A604A2 /* ZPOS */,
+				00E3BF231EAD2DB500A604A2 /* ZPOSTests */,
+				00E3BF2E1EAD2DB500A604A2 /* ZPOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E3BF0E1EAD2DB500A604A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E3BF1E1EAD2DB500A604A2 /* LaunchScreen.storyboard in Resources */,
+				00E3BF1B1EAD2DB500A604A2 /* Assets.xcassets in Resources */,
+				00E3BF191EAD2DB500A604A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E3BF221EAD2DB500A604A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E3BF2D1EAD2DB500A604A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E3BF0C1EAD2DB500A604A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E3BF161EAD2DB500A604A2 /* ViewController.swift in Sources */,
+				00E3BF141EAD2DB500A604A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E3BF201EAD2DB500A604A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E3BF291EAD2DB500A604A2 /* ZPOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E3BF2B1EAD2DB500A604A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E3BF341EAD2DB500A604A2 /* ZPOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E3BF261EAD2DB500A604A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00E3BF0F1EAD2DB500A604A2 /* ZPOS */;
+			targetProxy = 00E3BF251EAD2DB500A604A2 /* PBXContainerItemProxy */;
+		};
+		00E3BF311EAD2DB500A604A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00E3BF0F1EAD2DB500A604A2 /* ZPOS */;
+			targetProxy = 00E3BF301EAD2DB500A604A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00E3BF171EAD2DB500A604A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00E3BF181EAD2DB500A604A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00E3BF1C1EAD2DB500A604A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00E3BF1D1EAD2DB500A604A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E3BF361EAD2DB500A604A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00E3BF371EAD2DB500A604A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00E3BF391EAD2DB500A604A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZPOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.ZPOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		00E3BF3A1EAD2DB500A604A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZPOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.ZPOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		00E3BF3C1EAD2DB500A604A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZPOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.ZPOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZPOS.app/ZPOS";
+			};
+			name = Debug;
+		};
+		00E3BF3D1EAD2DB500A604A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZPOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.ZPOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZPOS.app/ZPOS";
+			};
+			name = Release;
+		};
+		00E3BF3F1EAD2DB500A604A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ZPOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.ZPOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ZPOS;
+			};
+			name = Debug;
+		};
+		00E3BF401EAD2DB500A604A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ZPOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.ZPOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ZPOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E3BF0B1EAD2DB400A604A2 /* Build configuration list for PBXProject "ZPOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E3BF361EAD2DB500A604A2 /* Debug */,
+				00E3BF371EAD2DB500A604A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E3BF381EAD2DB500A604A2 /* Build configuration list for PBXNativeTarget "ZPOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E3BF391EAD2DB500A604A2 /* Debug */,
+				00E3BF3A1EAD2DB500A604A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		00E3BF3B1EAD2DB500A604A2 /* Build configuration list for PBXNativeTarget "ZPOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E3BF3C1EAD2DB500A604A2 /* Debug */,
+				00E3BF3D1EAD2DB500A604A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		00E3BF3E1EAD2DB500A604A2 /* Build configuration list for PBXNativeTarget "ZPOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E3BF3F1EAD2DB500A604A2 /* Debug */,
+				00E3BF401EAD2DB500A604A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00E3BF081EAD2DB400A604A2 /* Project object */;
+}
