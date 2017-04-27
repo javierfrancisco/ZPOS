@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Menu" representedClassName="Menu" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="menuDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="menuToProduct" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="productToMenu" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="Order" representedClassName="Order" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="orderToProduct" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="productToOrder" inverseEntity="Product" syncable="YES"/>
+        <relationship name="orderToProductOrder" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductOrder" inverseName="productOrderToOrder" inverseEntity="ProductOrder" syncable="YES"/>
+        <relationship name="orderToUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="userToOrder" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Product" representedClassName="Product" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="productToMenu" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Menu" inverseName="menuToProduct" inverseEntity="Menu" syncable="YES"/>
+        <relationship name="productToOrder" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="orderToProduct" inverseEntity="Order" syncable="YES"/>
+        <relationship name="productToProductExtra" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductExtra" inverseName="productExtraToProduct" inverseEntity="ProductExtra" syncable="YES"/>
+        <relationship name="productToProductSize" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductSize" inverseName="productSizeToProduct" inverseEntity="ProductSize" syncable="YES"/>
+        <relationship name="productToProductSubtype" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductSubtype" inverseName="productSubtypeToProduct" inverseEntity="ProductSubtype" syncable="YES"/>
+        <relationship name="productToProductType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductType" inverseName="productTypeToProduct" inverseEntity="ProductType" syncable="YES"/>
+    </entity>
+    <entity name="ProductExtra" representedClassName="ProductExtra" syncable="YES">
+        <attribute name="extraDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="productExtraToProduct" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="productToProductExtra" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="ProductOrder" representedClassName="ProductOrder" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unitPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="productOrderToOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="orderToProductOrder" inverseEntity="Order" syncable="YES"/>
+        <relationship name="productOrderToProductOrderExtra" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductOrderExtra" inverseName="productOrderExtraToProductOrder" inverseEntity="ProductOrderExtra" syncable="YES"/>
+        <relationship name="productOrderToProductOrderSize" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductOrderSize" inverseName="productOrderSizeToProductOrder" inverseEntity="ProductOrderSize" syncable="YES"/>
+    </entity>
+    <entity name="ProductOrderExtra" representedClassName="ProductOrderExtra" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="productOrderExtraToProductOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductOrder" inverseName="productOrderToProductOrderExtra" inverseEntity="ProductOrder" syncable="YES"/>
+    </entity>
+    <entity name="ProductOrderSize" representedClassName="ProductOrderSize" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="productOrderSizeToProductOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductOrder" inverseName="productOrderToProductOrderSize" inverseEntity="ProductOrder" syncable="YES"/>
+    </entity>
+    <entity name="ProductSize" representedClassName="ProductSize" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="productSizeToProduct" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="productToProductSize" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="ProductSubtype" representedClassName="ProductSubtype" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subtypeDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="productSubtypeToProduct" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="productToProductSubtype" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="ProductType" representedClassName="ProductType" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="productTypeToProduct" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="productToProductType" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userToOrder" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="orderToUser" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Menu" positionX="-117" positionY="-220" width="128" height="103"/>
+        <element name="Order" positionX="-317" positionY="135" width="128" height="148"/>
+        <element name="Product" positionX="-146" positionY="-36" width="128" height="178"/>
+        <element name="ProductExtra" positionX="142" positionY="149" width="128" height="103"/>
+        <element name="ProductOrder" positionX="-117" positionY="230" width="128" height="148"/>
+        <element name="ProductOrderExtra" positionX="81" positionY="266" width="128" height="103"/>
+        <element name="ProductOrderSize" positionX="81" positionY="392" width="128" height="103"/>
+        <element name="ProductSize" positionX="142" positionY="32" width="128" height="103"/>
+        <element name="ProductSubtype" positionX="142" positionY="-85" width="128" height="103"/>
+        <element name="ProductType" positionX="142" positionY="-207" width="128" height="103"/>
+        <element name="User" positionX="-504" positionY="-81" width="128" height="148"/>
+    </elements>
+</model>

@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="ZPOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,95 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIL-v2-akU">
+                                <rect key="frame" x="63" y="134" width="250" height="400"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="as6-wa-pwy">
+                                        <rect key="frame" x="45" y="34" width="160" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="gKS-2g-MQr"/>
+                                            <constraint firstAttribute="width" constant="160" id="tmB-fA-Oae"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LeW-Pt-xvx">
+                                        <rect key="frame" x="0.0" y="204" width="250" height="40"/>
+                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="04q-fj-QSj"/>
+                                        </constraints>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qu1-7M-d9c">
+                                        <rect key="frame" x="0.0" y="264" width="250" height="40"/>
+                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1er-ls-iv8"/>
+                                        </constraints>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdJ-aS-n3n">
+                                        <rect key="frame" x="50" y="344" width="150" height="40"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="KPf-Kj-D7Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="LOG IN"/>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIV-HG-53w"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z-POS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6u-JN-sii">
+                                        <rect key="frame" x="78.5" y="61.5" width="94" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12939515709877014" green="0.12942373752593994" blue="0.12938910722732544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="d6u-JN-sii" firstAttribute="centerY" secondItem="as6-wa-pwy" secondAttribute="centerY" id="5KN-BI-Gua"/>
+                                    <constraint firstAttribute="trailing" secondItem="SdJ-aS-n3n" secondAttribute="trailing" constant="50" id="Bak-pN-y0N"/>
+                                    <constraint firstItem="qu1-7M-d9c" firstAttribute="top" secondItem="LeW-Pt-xvx" secondAttribute="bottom" constant="20" id="GhT-fO-Aa1"/>
+                                    <constraint firstAttribute="trailing" secondItem="as6-wa-pwy" secondAttribute="trailing" constant="45" id="QJr-32-XNt"/>
+                                    <constraint firstAttribute="trailing" secondItem="qu1-7M-d9c" secondAttribute="trailing" id="Shb-E3-k4I"/>
+                                    <constraint firstAttribute="trailing" secondItem="LeW-Pt-xvx" secondAttribute="trailing" id="Xic-fy-Ioc"/>
+                                    <constraint firstItem="as6-wa-pwy" firstAttribute="leading" secondItem="BIL-v2-akU" secondAttribute="leading" constant="45" id="Ya3-tj-zCF"/>
+                                    <constraint firstItem="SdJ-aS-n3n" firstAttribute="top" secondItem="qu1-7M-d9c" secondAttribute="bottom" constant="40" id="eHo-OQ-VBr"/>
+                                    <constraint firstItem="d6u-JN-sii" firstAttribute="centerX" secondItem="as6-wa-pwy" secondAttribute="centerX" id="fe6-0l-QDT"/>
+                                    <constraint firstItem="qu1-7M-d9c" firstAttribute="leading" secondItem="BIL-v2-akU" secondAttribute="leading" id="ium-An-uzI"/>
+                                    <constraint firstItem="SdJ-aS-n3n" firstAttribute="leading" secondItem="BIL-v2-akU" secondAttribute="leading" constant="50" id="mhQ-SB-O3g"/>
+                                    <constraint firstItem="LeW-Pt-xvx" firstAttribute="leading" secondItem="BIL-v2-akU" secondAttribute="leading" id="nH7-BF-WHf"/>
+                                    <constraint firstItem="as6-wa-pwy" firstAttribute="top" secondItem="BIL-v2-akU" secondAttribute="top" constant="34" id="oUc-VC-EOK"/>
+                                    <constraint firstItem="LeW-Pt-xvx" firstAttribute="top" secondItem="as6-wa-pwy" secondAttribute="bottom" constant="80" id="taY-sZ-Wga"/>
+                                    <constraint firstAttribute="height" constant="400" id="tdk-1W-bVX"/>
+                                    <constraint firstAttribute="width" constant="250" id="zVx-62-NxF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BIL-v2-akU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gh7-u4-YCr"/>
+                            <constraint firstItem="BIL-v2-akU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tlJ-G0-37U"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="SdJ-aS-n3n" id="wsE-PT-hfI"/>
+                        <outlet property="password" destination="qu1-7M-d9c" id="Xrz-Wc-mP1"/>
+                        <outlet property="username" destination="LeW-Pt-xvx" id="DTI-nk-PRg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>
