@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0026375C1EB2D0EC00D65BAA /* TodaysOrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0026375B1EB2D0EC00D65BAA /* TodaysOrdersController.swift */; };
+		0026375E1EB2D90000D65BAA /* NewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0026375D1EB2D90000D65BAA /* NewOrderViewController.swift */; };
 		00B4F30E1EB190090048CB54 /* ProductSize+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4F2F81EB190090048CB54 /* ProductSize+CoreDataClass.swift */; };
 		00B4F30F1EB190090048CB54 /* ProductSize+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4F2F91EB190090048CB54 /* ProductSize+CoreDataProperties.swift */; };
 		00B4F3101EB190090048CB54 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4F2FA1EB190090048CB54 /* Product+CoreDataClass.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0026375B1EB2D0EC00D65BAA /* TodaysOrdersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodaysOrdersController.swift; sourceTree = "<group>"; };
+		0026375D1EB2D90000D65BAA /* NewOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewOrderViewController.swift; sourceTree = "<group>"; };
 		00B4F2F81EB190090048CB54 /* ProductSize+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ProductSize+CoreDataClass.swift"; path = "../ProductSize+CoreDataClass.swift"; sourceTree = "<group>"; };
 		00B4F2F91EB190090048CB54 /* ProductSize+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ProductSize+CoreDataProperties.swift"; path = "../ProductSize+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		00B4F2FA1EB190090048CB54 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Product+CoreDataClass.swift"; path = "../Product+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 			children = (
 				00B4F32B1EB194EF0048CB54 /* Delegates */,
 				00E3BF151EAD2DB500A604A2 /* LoginController.swift */,
+				0026375B1EB2D0EC00D65BAA /* TodaysOrdersController.swift */,
+				0026375D1EB2D90000D65BAA /* NewOrderViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -394,6 +400,7 @@
 				00B4F31A1EB190090048CB54 /* Order+CoreDataClass.swift in Sources */,
 				00B4F31D1EB190090048CB54 /* ProductOrder+CoreDataProperties.swift in Sources */,
 				00B4F3211EB190090048CB54 /* ProductOrderExtra+CoreDataProperties.swift in Sources */,
+				0026375C1EB2D0EC00D65BAA /* TodaysOrdersController.swift in Sources */,
 				00B4F3221EB190090048CB54 /* ProductOrderSize+CoreDataClass.swift in Sources */,
 				00E3BF141EAD2DB500A604A2 /* AppDelegate.swift in Sources */,
 				00B4F3181EB190090048CB54 /* Menu+CoreDataClass.swift in Sources */,
@@ -402,6 +409,7 @@
 				00B4F31E1EB190090048CB54 /* ProductExtra+CoreDataClass.swift in Sources */,
 				00B4F3111EB190090048CB54 /* Product+CoreDataProperties.swift in Sources */,
 				00B4F32A1EB194150048CB54 /* GCDBlackBox.swift in Sources */,
+				0026375E1EB2D90000D65BAA /* NewOrderViewController.swift in Sources */,
 				00B4F3141EB190090048CB54 /* ProductSubtype+CoreDataClass.swift in Sources */,
 				00B4F30E1EB190090048CB54 /* ProductSize+CoreDataClass.swift in Sources */,
 				00B4F3281EB1938D0048CB54 /* ZPOSConvenience.swift in Sources */,

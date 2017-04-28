@@ -15,8 +15,26 @@ import Foundation
 extension ZPOSClient {
 
     
-        func authenticateWithViewController(_ hostViewController: UIViewController, completionHandlerForAuth: @escaping (_ success: Bool, _ errorString: String?) -> Void) {
-            
+
+    
+    
+    func authenticateUser(_ user: String, _ password : String, completionHandlerForAuth: @escaping (_ success: Bool, _ errorString: String?) -> Void) {
+        
+        let username = "user"
+        //let password = "user"
+        
+        var userFound = false
+        
+        if(user == username){
+        
+            userFound = true
         }
+        
+        if(userFound){
+        
+            completionHandlerForAuth(true, nil)
+        }
+        
+    }
 
 }
