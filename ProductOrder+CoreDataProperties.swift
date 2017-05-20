@@ -2,7 +2,7 @@
 //  ProductOrder+CoreDataProperties.swift
 //  ZPOS
 //
-//  Created by zenkiu on 4/26/17.
+//  Created by zenkiu on 4/29/17.
 //  Copyright © 2017 zenkiu. All rights reserved.
 //
 
@@ -20,8 +20,10 @@ extension ProductOrder {
     @NSManaged public var quantity: Int16
     @NSManaged public var total: Double
     @NSManaged public var unitPrice: Double
+    @NSManaged public var productSize: String?
+    @NSManaged public var price: Double
     @NSManaged public var productOrderToOrder: Order?
     @NSManaged public var productOrderToProductOrderExtra: ProductOrderExtra?
-    @NSManaged public var productOrderToProductOrderSize: ProductOrderSize?
+    @NSManaged public var productOrderToProduct: Product?
 
 }

@@ -2,7 +2,7 @@
 //  ProductSubtype+CoreDataProperties.swift
 //  ZPOS
 //
-//  Created by zenkiu on 4/26/17.
+//  Created by zenkiu on 5/1/17.
 //  Copyright © 2017 zenkiu. All rights reserved.
 //
 
@@ -20,6 +20,7 @@ extension ProductSubtype {
     @NSManaged public var name: String?
     @NSManaged public var subtypeDescription: String?
     @NSManaged public var productSubtypeToProduct: NSSet?
+    @NSManaged public var productSubtypeToProductType: ProductType?
 
 }
 

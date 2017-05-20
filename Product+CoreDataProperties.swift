@@ -2,7 +2,7 @@
 //  Product+CoreDataProperties.swift
 //  ZPOS
 //
-//  Created by zenkiu on 4/26/17.
+//  Created by zenkiu on 5/1/17.
 //  Copyright © 2017 zenkiu. All rights reserved.
 //
 
@@ -19,29 +19,10 @@ extension Product {
     @NSManaged public var createDate: NSDate?
     @NSManaged public var name: String?
     @NSManaged public var productDescription: String?
-    @NSManaged public var productToMenu: Menu?
-    @NSManaged public var productToOrder: NSSet?
     @NSManaged public var productToProductExtra: NSSet?
+    @NSManaged public var productToProductOrder: NSSet?
     @NSManaged public var productToProductSize: NSSet?
     @NSManaged public var productToProductSubtype: ProductSubtype?
-    @NSManaged public var productToProductType: ProductType?
-
-}
-
-// MARK: Generated accessors for productToOrder
-extension Product {
-
-    @objc(addProductToOrderObject:)
-    @NSManaged public func addToProductToOrder(_ value: Order)
-
-    @objc(removeProductToOrderObject:)
-    @NSManaged public func removeFromProductToOrder(_ value: Order)
-
-    @objc(addProductToOrder:)
-    @NSManaged public func addToProductToOrder(_ values: NSSet)
-
-    @objc(removeProductToOrder:)
-    @NSManaged public func removeFromProductToOrder(_ values: NSSet)
 
 }
 
@@ -59,6 +40,23 @@ extension Product {
 
     @objc(removeProductToProductExtra:)
     @NSManaged public func removeFromProductToProductExtra(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for productToProductOrder
+extension Product {
+
+    @objc(addProductToProductOrderObject:)
+    @NSManaged public func addToProductToProductOrder(_ value: ProductOrder)
+
+    @objc(removeProductToProductOrderObject:)
+    @NSManaged public func removeFromProductToProductOrder(_ value: ProductOrder)
+
+    @objc(addProductToProductOrder:)
+    @NSManaged public func addToProductToProductOrder(_ values: NSSet)
+
+    @objc(removeProductToProductOrder:)
+    @NSManaged public func removeFromProductToProductOrder(_ values: NSSet)
 
 }
 

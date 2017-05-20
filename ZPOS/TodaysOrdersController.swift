@@ -20,11 +20,14 @@ class TodaysOrdersController: UIViewController {
         
         print(#function)
         
+        
+        
         // create and set the logout button
         parent!.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout))
         
         parent!.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New Order", style: .plain, target: self, action: #selector(createNewOrder))
 
+        self.title = "Today's Orders"
     }
 
     
@@ -38,8 +41,9 @@ class TodaysOrdersController: UIViewController {
         
         print(#function)
         
-        let controller = storyboard!.instantiateViewController(withIdentifier: "NewOrderViewController") as! NewOrderViewController
-//        controller.movie = movies[(indexPath as NSIndexPath).row]
+        let controller = storyboard!.instantiateViewController(withIdentifier: "OrderViewController") as! OrderViewController
+
+
         navigationController!.pushViewController(controller, animated: true)
     }
 }

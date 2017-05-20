@@ -20,7 +20,7 @@ extension ZPOSClient {
     
     func authenticateUser(_ user: String, _ password : String, completionHandlerForAuth: @escaping (_ success: Bool, _ errorString: String?) -> Void) {
         
-        let username = "user"
+        let username = "Username"
         //let password = "user"
         
         var userFound = false

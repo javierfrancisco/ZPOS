@@ -2,7 +2,7 @@
 //  Order+CoreDataProperties.swift
 //  ZPOS
 //
-//  Created by zenkiu on 4/26/17.
+//  Created by zenkiu on 4/29/17.
 //  Copyright © 2017 zenkiu. All rights reserved.
 //
 
@@ -20,26 +20,8 @@ extension Order {
     @NSManaged public var email: String?
     @NSManaged public var tax: Double
     @NSManaged public var total: Double
-    @NSManaged public var orderToProduct: NSSet?
-    @NSManaged public var orderToProductOrder: NSSet?
     @NSManaged public var orderToUser: User?
-
-}
-
-// MARK: Generated accessors for orderToProduct
-extension Order {
-
-    @objc(addOrderToProductObject:)
-    @NSManaged public func addToOrderToProduct(_ value: Product)
-
-    @objc(removeOrderToProductObject:)
-    @NSManaged public func removeFromOrderToProduct(_ value: Product)
-
-    @objc(addOrderToProduct:)
-    @NSManaged public func addToOrderToProduct(_ values: NSSet)
-
-    @objc(removeOrderToProduct:)
-    @NSManaged public func removeFromOrderToProduct(_ values: NSSet)
+    @NSManaged public var orderToProductOrder: NSSet?
 
 }
 

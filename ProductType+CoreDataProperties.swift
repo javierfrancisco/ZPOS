@@ -2,7 +2,7 @@
 //  ProductType+CoreDataProperties.swift
 //  ZPOS
 //
-//  Created by zenkiu on 4/26/17.
+//  Created by zenkiu on 5/1/17.
 //  Copyright © 2017 zenkiu. All rights reserved.
 //
 
@@ -19,23 +19,24 @@ extension ProductType {
     @NSManaged public var createDate: NSDate?
     @NSManaged public var name: String?
     @NSManaged public var typeDescription: String?
-    @NSManaged public var productTypeToProduct: NSSet?
+    @NSManaged public var productTypeToProductSubtype: NSSet?
+    @NSManaged public var productTypeToMenu: Menu?
 
 }
 
-// MARK: Generated accessors for productTypeToProduct
+// MARK: Generated accessors for productTypeToProductSubtype
 extension ProductType {
 
-    @objc(addProductTypeToProductObject:)
-    @NSManaged public func addToProductTypeToProduct(_ value: Product)
+    @objc(addProductTypeToProductSubtypeObject:)
+    @NSManaged public func addToProductTypeToProductSubtype(_ value: ProductSubtype)
 
-    @objc(removeProductTypeToProductObject:)
-    @NSManaged public func removeFromProductTypeToProduct(_ value: Product)
+    @objc(removeProductTypeToProductSubtypeObject:)
+    @NSManaged public func removeFromProductTypeToProductSubtype(_ value: ProductSubtype)
 
-    @objc(addProductTypeToProduct:)
-    @NSManaged public func addToProductTypeToProduct(_ values: NSSet)
+    @objc(addProductTypeToProductSubtype:)
+    @NSManaged public func addToProductTypeToProductSubtype(_ values: NSSet)
 
-    @objc(removeProductTypeToProduct:)
-    @NSManaged public func removeFromProductTypeToProduct(_ values: NSSet)
+    @objc(removeProductTypeToProductSubtype:)
+    @NSManaged public func removeFromProductTypeToProductSubtype(_ values: NSSet)
 
 }

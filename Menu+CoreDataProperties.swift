@@ -2,7 +2,7 @@
 //  Menu+CoreDataProperties.swift
 //  ZPOS
 //
-//  Created by zenkiu on 4/26/17.
+//  Created by zenkiu on 5/1/17.
 //  Copyright © 2017 zenkiu. All rights reserved.
 //
 
@@ -19,23 +19,23 @@ extension Menu {
     @NSManaged public var createDate: NSDecimalNumber?
     @NSManaged public var menuDescription: String?
     @NSManaged public var name: String?
-    @NSManaged public var menuToProduct: NSSet?
+    @NSManaged public var menuToProductType: NSSet?
 
 }
 
-// MARK: Generated accessors for menuToProduct
+// MARK: Generated accessors for menuToProductType
 extension Menu {
 
-    @objc(addMenuToProductObject:)
-    @NSManaged public func addToMenuToProduct(_ value: Product)
+    @objc(addMenuToProductTypeObject:)
+    @NSManaged public func addToMenuToProductType(_ value: ProductType)
 
-    @objc(removeMenuToProductObject:)
-    @NSManaged public func removeFromMenuToProduct(_ value: Product)
+    @objc(removeMenuToProductTypeObject:)
+    @NSManaged public func removeFromMenuToProductType(_ value: ProductType)
 
-    @objc(addMenuToProduct:)
-    @NSManaged public func addToMenuToProduct(_ values: NSSet)
+    @objc(addMenuToProductType:)
+    @NSManaged public func addToMenuToProductType(_ values: NSSet)
 
-    @objc(removeMenuToProduct:)
-    @NSManaged public func removeFromMenuToProduct(_ values: NSSet)
+    @objc(removeMenuToProductType:)
+    @NSManaged public func removeFromMenuToProductType(_ values: NSSet)
 
 }

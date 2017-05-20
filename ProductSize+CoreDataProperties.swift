@@ -2,7 +2,7 @@
 //  ProductSize+CoreDataProperties.swift
 //  ZPOS
 //
-//  Created by zenkiu on 4/26/17.
+//  Created by zenkiu on 4/29/17.
 //  Copyright © 2017 zenkiu. All rights reserved.
 //
 
