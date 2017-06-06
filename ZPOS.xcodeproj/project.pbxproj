@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0013C1C71ED22B88005C9D64 /* OrderPaymentProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0013C1C61ED22B88005C9D64 /* OrderPaymentProcessViewController.swift */; };
+		0013C1C91EE33E8F005C9D64 /* ProductOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0013C1C81EE33E8F005C9D64 /* ProductOrderTableViewCell.swift */; };
+		0018BCF41EE46889006592DC /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0018BCF31EE46889006592DC /* OrderTableViewCell.swift */; };
 		0026375C1EB2D0EC00D65BAA /* TodaysOrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0026375B1EB2D0EC00D65BAA /* TodaysOrdersController.swift */; };
 		0026375E1EB2D90000D65BAA /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0026375D1EB2D90000D65BAA /* OrderViewController.swift */; };
 		002637601EB4D20600D65BAA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0026375F1EB4D20600D65BAA /* CoreDataStack.swift */; };
@@ -67,6 +70,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0013C1C61ED22B88005C9D64 /* OrderPaymentProcessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderPaymentProcessViewController.swift; sourceTree = "<group>"; };
+		0013C1C81EE33E8F005C9D64 /* ProductOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductOrderTableViewCell.swift; sourceTree = "<group>"; };
+		0018BCF31EE46889006592DC /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		0026375B1EB2D0EC00D65BAA /* TodaysOrdersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodaysOrdersController.swift; sourceTree = "<group>"; };
 		0026375D1EB2D90000D65BAA /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		0026375F1EB4D20600D65BAA /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -245,6 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				009B71FB1ECBEBFD00B4B0E5 /* ProductExtraCollectionViewCell.swift */,
+				0013C1C81EE33E8F005C9D64 /* ProductOrderTableViewCell.swift */,
+				0018BCF31EE46889006592DC /* OrderTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -260,6 +268,7 @@
 				00A4CE0F1EB8265500B53D95 /* ProductSubTypeViewController.swift */,
 				0090BF2E1EC411680079D13C /* ProductListViewController.swift */,
 				0090BF321EC55B240079D13C /* ProductDetailViewController.swift */,
+				0013C1C61ED22B88005C9D64 /* OrderPaymentProcessViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -401,10 +410,13 @@
 			files = (
 				002637AC1EB51B9200D65BAA /* Order+CoreDataProperties.swift in Sources */,
 				00E3BF161EAD2DB500A604A2 /* LoginController.swift in Sources */,
+				0013C1C91EE33E8F005C9D64 /* ProductOrderTableViewCell.swift in Sources */,
+				0013C1C71ED22B88005C9D64 /* OrderPaymentProcessViewController.swift in Sources */,
 				002637B11EB51B9200D65BAA /* User+CoreDataClass.swift in Sources */,
 				002637B51EB51B9200D65BAA /* ProductSize+CoreDataClass.swift in Sources */,
 				002637B71EB51B9200D65BAA /* Menu+CoreDataClass.swift in Sources */,
 				00B4F3261EB192EA0048CB54 /* ZPOSClient.swift in Sources */,
+				0018BCF41EE46889006592DC /* OrderTableViewCell.swift in Sources */,
 				002637B61EB51B9200D65BAA /* ProductSize+CoreDataProperties.swift in Sources */,
 				002637B91EB51B9200D65BAA /* ProductOrderExtra+CoreDataClass.swift in Sources */,
 				00A4CE1A1EB829D300B53D95 /* Product+CoreDataProperties.swift in Sources */,

@@ -9,16 +9,16 @@
 
 import UIKit
 import Foundation
+import CoreData
 
 // MARK: - TMDBClient (Convenient Resource Methods)
 
 extension ZPOSClient {
 
     
-
     
     
-    func authenticateUser(_ user: String, _ password : String, completionHandlerForAuth: @escaping (_ success: Bool, _ errorString: String?) -> Void) {
+    func authenticateUser(_ user: String, _ password : String, _ context: NSManagedObjectContext, completionHandlerForAuth: @escaping (_ success: Bool, _ user: User, _ errorString: String?) -> Void) {
         
         let username = "Username"
         //let password = "user"
@@ -30,9 +30,13 @@ extension ZPOSClient {
             userFound = true
         }
         
+        let user =  User(firstname: "Javier", lastname: "Alvarez", username: "user", context: context)
+        
         if(userFound){
         
-            completionHandlerForAuth(true, nil)
+            completionHandlerForAuth(true, user, nil)
+            //this.u
+            //this.user = user
         }
         
     }

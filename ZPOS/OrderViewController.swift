@@ -17,9 +17,15 @@ class OrderViewController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
+    
+
+    @IBOutlet weak var productsCountLabel: UILabel!
+    
+    @IBOutlet weak var totalAmountLabel: UILabel!
     var productTypes = [ProductType]()
     var productOrder : [ProductOrder]!
     var order : Order!
+    var user : User!
     
     override func viewDidLoad() {
         
@@ -38,9 +44,20 @@ class OrderViewController: UIViewController {
         getProductTypes()
         
         getOrder()
+        
+        if order.orderToProductOrder?.count == 0 {
+        
+            payButton.isEnabled = false
+        }else{
+            payButton.isEnabled = true
+        }
+        
+        
+        
+    
        
     }
-    
+
     func getOrder(){
     
         
@@ -50,11 +67,22 @@ class OrderViewController: UIViewController {
         
             let stack =  CoreDataStack.sharedInstance()
             
-            order = Order(context: stack.context)
-          
+            order = Order(user: ZPOSClient.sharedInstance().user!, context: stack.context)
+           
         }
         
         productOrder = Array(order.orderToProductOrder!) as! [ProductOrder]
+        
+        var productsCount : Int = 0
+        for productOrder: ProductOrder in productOrder {
+            
+            productsCount = productsCount +  Int(productOrder.quantity)
+        }
+        
+        productsCountLabel.text = String(productsCount)
+        
+        totalAmountLabel.text = String(order.total)
+        
         
     }
     
@@ -128,19 +156,33 @@ class OrderViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var payButton: UIButton!
     
-    
-    
-  
+    @IBAction func cancelOrderAction(_ sender: Any) {
+    }
     
 
+    @IBAction func goToOrderPaymentProcessAction(_ sender: Any) {
+        
+        
+        // Get a ProductSubtypeViewController from the Storyboard
+        let orderPaymentProcessViewController = self.storyboard?.instantiateViewController(withIdentifier: "OrderPaymentProcessViewController") as! OrderPaymentProcessViewController
+        
+        // Set the story node so that we will see the start of the story
+        orderPaymentProcessViewController.order = order
+        
+        // Push the new controller onto the stack
+        self.navigationController!.pushViewController(orderPaymentProcessViewController, animated: true)
+
+        
+    }
 
    
 }
 
 
 
-// MARK: - FavoritesViewController: UITableViewDelegate, UITableViewDataSource
+// MARK: - OrderViewController: UITableViewDelegate, UITableViewDataSource
 
 extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -155,9 +197,18 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell")!
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "ProductOrderTableViewCell") as! ProductOrderTableViewCell
+        
+        
         let productOrderC = productOrder[indexPath.row]
-        cell.textLabel!.text = String(productOrderC.price)
+        
+        cell.priceLabel.text = String(productOrderC.total)
+        
+        let productDescription = String(productOrderC.quantity) + " " + productOrderC.productSize! + " " + productOrderC.productOrderToProduct!.name!
+        
+        //cell.textLabel!.text = String(productOrderC.price)
+        cell.textLabel!.text = productDescription
+        
         //cell.detailTextLabel!.text = productType.description
         // let imageName = adventure.credits.imageName
         // cell.imageView!.image = UIImage(named: imageName!)
@@ -169,20 +220,6 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        // Get the selected product Type
-        let selectedProductType = productTypes[indexPath.row]
-        
-        
-        
-        
-        // Get a ProductSubtypeViewController from the Storyboard
-        let productSubtypeController = self.storyboard?.instantiateViewController(withIdentifier: "ProductSubTypeViewController") as! ProductSubTypeViewController
-        
-        // Set the story node so that we will see the start of the story
-        //storyNodeController.storyNode = firstNodeInTheAdventure
-        
-        // Push the new controller onto the stack
-        self.navigationController!.pushViewController(productSubtypeController, animated: true)
-        
+                
     }
 }

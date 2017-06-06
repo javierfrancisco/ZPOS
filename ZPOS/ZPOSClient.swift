@@ -11,6 +11,7 @@ import Foundation
 
 class ZPOSClient : NSObject{
 
+    var user : User!
     
     // MARK: Shared Instance
     

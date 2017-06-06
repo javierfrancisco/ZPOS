@@ -13,7 +13,7 @@ import CoreData
 public class Order: NSManagedObject {
     
     
-    convenience init(context: NSManagedObjectContext) {
+    convenience init(user: User, context: NSManagedObjectContext) {
         
         // An EntityDescription is an object that has access to all
         // the information you provided in the Entity part of the model
@@ -22,6 +22,7 @@ public class Order: NSManagedObject {
             self.init(entity: ent, insertInto: context)
 
             self.createDate = Date() as NSDate
+            self.orderToUser = user
             
         } else {
             fatalError("Unable to find Entity name!")

@@ -17,6 +17,7 @@ class ProductTypeTableViewController: UITableViewController {
     
     var productTypes = [ProductType]()
     var order : Order!
+    var user : User!
     
     override func viewDidLoad() {
         
@@ -42,7 +43,7 @@ class ProductTypeTableViewController: UITableViewController {
         do {
             if let menuArr = try stack.context.fetch(fr) as? [Menu]{
                 
-                
+                	
                 print("num of Menus found: \(menuArr.count))")
                 
                 let menu = menuArr[0];

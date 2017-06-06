@@ -38,14 +38,16 @@ class LoginController: UIViewController {
         
         print(#function)
 
+        let stack =  CoreDataStack.sharedInstance()
         
-        ZPOSClient.sharedInstance().authenticateUser(username.text!, password.text!){ (success , errorString ) in
+        ZPOSClient.sharedInstance().authenticateUser(username.text!, password.text!, stack.context){ (success , user, errorString ) in
             
             performUIUpdatesOnMain {
                 
                 if success {
                     
-                    self.completeLogin()
+                    ZPOSClient.sharedInstance().user = user
+                    self.completeLogin(user: user)
                     print("user found")
                 }else {
                     print("user not found")
@@ -55,11 +57,14 @@ class LoginController: UIViewController {
         }
     }
     
-    private func completeLogin() {
+    private func completeLogin(user: User) {
         
         print(#function)
 
         let controller = storyboard!.instantiateViewController(withIdentifier: "ManagerNavigationController") as! UINavigationController
+        
+         
+        
         present(controller, animated: true, completion: nil)
     }
     
